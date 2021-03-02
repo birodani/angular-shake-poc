@@ -13,7 +13,7 @@ export class AppComponent implements OnInit {
     let hasDeviceMotion = 'ondevicemotion' in window;
     if(hasDeviceMotion) {
       this.title = "Motion event available!";
-      document.addEventListener('ondevicemotion', x => alert("Shake!"));  
+      document.addEventListener('devicemotion', x => alert("Shake!"));  
       } else {
         this.title = "Motion event unavailable!";
       }
